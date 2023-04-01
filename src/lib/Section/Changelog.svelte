@@ -7,7 +7,7 @@
   <div class="center">
     <div>
       <h1 class="header">Changelog</h1>
-      <h3 class="subheader">What's been happening?</h3>
+      <h3 class="subheader">Stay up-to-date with what's been released</h3>
       <List />
     </div>
   </div>
