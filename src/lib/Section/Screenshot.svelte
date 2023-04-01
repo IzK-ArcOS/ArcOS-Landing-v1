@@ -11,6 +11,6 @@
     width: calc(100% - 20%);
     margin: 80px 10%;
     border-radius: 1vw;
-    margin-top: -80px;
+    margin-top: -6vw;
   }
 </style>
