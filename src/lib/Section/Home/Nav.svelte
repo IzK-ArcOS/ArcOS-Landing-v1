@@ -36,6 +36,11 @@
     display: flex;
   }
 
+  div.nav div.logo img {
+    width: 30px;
+    height: 30px;
+  }
+
   div.nav div.logo p {
     margin: 0;
     margin-left: 10px;
