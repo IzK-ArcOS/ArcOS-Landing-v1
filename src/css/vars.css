@@ -1,0 +1,14 @@
+:root * {
+  --bg: #111;
+  --gradient-start: #008dff;
+  --gradient-end: #00488c;
+  --gradient: linear-gradient(#000000cc, #000000cc),
+    linear-gradient(
+      -65deg,
+      var(--gradient-end) 0%,
+      var(--gradient-start) 50%,
+      var(--gradient-end) 100%
+    );
+
+  --fg: #ccc;
+}

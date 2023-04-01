@@ -1,0 +1,17 @@
+@import url("./vars.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+body {
+  color: var(--fg);
+  background-color: #111;
+  margin: 0;
+}
+
+*:not(.material-icons-round) {
+  font-family: "Inter", sans-serif;
+}
+
+div.center {
+  display: flex;
+  justify-content: center;
+}
