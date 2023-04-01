@@ -1,18 +1,41 @@
 <script lang="ts">
+  import { onMount } from "svelte";
+  import { getReleases } from "../../../../ts/fetch";
+
   let version = "0.0.0";
   let prerelease = false;
+  let releases: GitHubRelease[] = [];
+  let loaded = true;
+
+  onMount(async () => {
+    releases = await getReleases();
+
+    if (!releases.length) return;
+
+    version = releases[0].tag_name;
+    prerelease = releases[0].prerelease;
+    loaded = true;
+  });
+
+  function download() {
+    window.open(releases[0].assets[0].browser_download_url);
+  }
 </script>
 
 <div class="download">
-  <button class="download">
+  <button class="download" on:click={download} disabled={!loaded}>
     <p>Download Latest</p>
   </button>
   <div class="info">
-    <p class="version">{version} - {prerelease ? "Uns" : "S"}table</p>
-    <div class="dot" />
-    <a href="https://github.com/IzK-ArcOS/ArcOS-Frontend/releases"
-      >Other versions</a
-    >
+    {#if loaded}
+      <p class="version">{version} - {prerelease ? "Uns" : "S"}table</p>
+      <div class="dot" />
+      <a href="https://github.com/IzK-ArcOS/ArcOS-Frontend/releases"
+        >Other versions</a
+      >
+    {:else}
+      Unable to get releases.
+    {/if}
   </div>
 </div>
 
