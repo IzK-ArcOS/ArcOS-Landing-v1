@@ -25,4 +25,14 @@
   footer a {
     color: var(--fg);
   }
+
+  @media screen and (max-width: 750px) {
+    footer {
+      padding: 20px;
+      height: fit-content;
+    }
+    footer p {
+      text-align: center;
+    }
+  }
 </style>

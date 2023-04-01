@@ -16,8 +16,8 @@
     <div class="items">
       <Open {release} />
       <Download {release} />
-
-      <Tag {release} />
+      <!-- 
+      <Tag {release} /> -->
       <Status {release} />
     </div>
     <h1 class="title">

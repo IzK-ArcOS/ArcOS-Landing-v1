@@ -23,7 +23,11 @@
 </script>
 
 <div class="download">
-  <button class="download" on:click={download} disabled={!loaded}>
+  <button
+    class="download"
+    on:click={download}
+    disabled={!loaded || !navigator.userAgent.toLowerCase().includes("windows")}
+  >
     <p>Download Latest</p>
   </button>
   <div class="info">
@@ -57,6 +61,10 @@
     background-color: #fff1;
     padding: 10px;
     transition: all 0.15s;
+  }
+
+  div.download button:disabled {
+    opacity: 0.4;
   }
 
   div.download button::after {
@@ -104,5 +112,16 @@
 
   div.download div.info a {
     color: var(--fg);
+  }
+
+  @media screen and (max-width: 800px) {
+    div.download {
+      margin-left: 0;
+      text-align: center;
+    }
+
+    div.download button {
+      width: 175px;
+    }
   }
 </style>

@@ -21,4 +21,10 @@
     display: flex;
     justify-content: center;
   }
+
+  @media screen and (max-width: 800px) {
+    div.wrapper {
+      padding: 20px;
+    }
+  }
 </style>

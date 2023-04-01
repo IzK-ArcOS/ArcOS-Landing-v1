@@ -36,4 +36,14 @@
   div.center {
     margin-top: 80px;
   }
+
+  @media screen and (max-width: 800px) {
+    h1.header {
+      font-size: 28px;
+    }
+
+    h3.subheader {
+      font-size: 16px;
+    }
+  }
 </style>

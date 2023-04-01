@@ -29,4 +29,10 @@
     opacity: 0.5;
     margin: 0;
   }
+
+  @media screen and (max-width: 800px) {
+    div.info h1.header {
+      text-align: center;
+    }
+  }
 </style>

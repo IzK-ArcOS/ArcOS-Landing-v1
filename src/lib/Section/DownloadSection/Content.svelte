@@ -19,4 +19,12 @@
     box-sizing: border-box;
     display: flex;
   }
+
+  @media screen and (max-width: 800px) {
+    div.content {
+      flex-direction: column;
+      width: 100%;
+      height: unset;
+    }
+  }
 </style>

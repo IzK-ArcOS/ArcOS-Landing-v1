@@ -37,4 +37,22 @@
     line-height: 29px;
     opacity: 0.5;
   }
+
+  @media screen and (max-width: 500px) {
+    div.center img {
+      height: 180px;
+    }
+
+    div.center h1,
+    div.center h3 {
+      line-height: unset;
+    }
+    div.center h1 {
+      font-size: 30px;
+    }
+
+    div.center h3 {
+      font-size: 22px;
+    }
+  }
 </style>

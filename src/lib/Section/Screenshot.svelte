@@ -11,6 +11,12 @@
     width: calc(100% - 20%);
     margin: 80px 10%;
     border-radius: 1vw;
-    margin-top: -6vw;
+    margin-top: -10vh;
+  }
+
+  @media screen and (max-width: 800px) {
+    img {
+      margin-top: -20vh;
+    }
   }
 </style>

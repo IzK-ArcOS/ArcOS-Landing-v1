@@ -51,12 +51,37 @@
 
   div.nav div.pages a {
     margin: 0;
-    margin-right: 20px;
     text-decoration: none;
     color: var(--fg);
   }
 
+  div.nav div.pages a + a {
+    margin-left: 20px;
+  }
+
   div.nav div.pages a:hover {
     text-decoration: underline;
+  }
+
+  @media screen and (max-width: 600px) {
+    div.nav {
+      justify-content: center;
+    }
+    div.nav div.logo p {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 390px) {
+    div.nav div.logo {
+      margin-right: 15px;
+    }
+    div.nav div.sep {
+      display: none;
+    }
+
+    div.nav div.pages a + a {
+      margin-left: 15px;
+    }
   }
 </style>
