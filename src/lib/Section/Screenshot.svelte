@@ -16,7 +16,7 @@
 
   @media screen and (max-width: 800px) {
     img {
-      margin-top: -20vh;
+      margin: 10%;
     }
   }
 </style>

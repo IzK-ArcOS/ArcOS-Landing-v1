@@ -32,6 +32,10 @@
 
   @media screen and (max-width: 800px) {
     div.info h1.header {
+      margin-bottom: 20px;
+    }
+
+    div.info {
       text-align: center;
     }
   }

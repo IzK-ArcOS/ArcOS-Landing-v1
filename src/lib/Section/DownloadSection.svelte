@@ -24,7 +24,7 @@
 
   @media screen and (max-width: 800px) {
     div.wrapper {
-      padding: 20px;
+      padding: 00px;
     }
   }
 </style>

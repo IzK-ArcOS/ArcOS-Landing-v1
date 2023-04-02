@@ -10,6 +10,7 @@
   div.release-status {
     padding: 0 8px;
     line-height: 26px;
+    height: 26px;
     background-color: #283e28;
     border-radius: 5px;
     color: #abffa6;

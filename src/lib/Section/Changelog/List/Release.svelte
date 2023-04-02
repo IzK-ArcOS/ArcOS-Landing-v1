@@ -13,15 +13,17 @@
 
 {#if release}
   <div class="release">
-    <div class="items">
-      <Open {release} />
-      <Download {release} />
-      <!-- 
-      <Tag {release} /> -->
-      <Status {release} />
-    </div>
     <h1 class="title">
-      {release.tag_name}
+      <span>
+        {release.tag_name}
+      </span>
+      <div class="items">
+        <Open {release} />
+        <Download {release} />
+        <!-- 
+        <Tag {release} /> -->
+        <Status {release} />
+      </div>
     </h1>
     <SvelteMarkdown source={release.body} />
   </div>
@@ -56,14 +58,21 @@
   div.release h1 {
     margin: 0;
     margin-bottom: 10px;
+    display: flex;
+  }
+
+  div.release h1 span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   div.release div.items {
-    position: absolute;
-    top: 15px;
-    right: 15px;
+    margin-left: auto;
     display: flex;
-    height: 26px;
     gap: 5px;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: normal;
   }
 </style>

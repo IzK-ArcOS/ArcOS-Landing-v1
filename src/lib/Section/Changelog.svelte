@@ -44,6 +44,12 @@
 
     h3.subheader {
       font-size: 16px;
+      margin: 0px 15px;
+      margin-bottom: 0;
+    }
+
+    div.center {
+      margin-top: 40px;
     }
   }
 </style>

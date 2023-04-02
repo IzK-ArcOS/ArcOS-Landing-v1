@@ -25,6 +25,8 @@
       flex-direction: column;
       width: 100%;
       height: unset;
+      padding: 40px 20px;
+      background-color: transparent;
     }
   }
 </style>
