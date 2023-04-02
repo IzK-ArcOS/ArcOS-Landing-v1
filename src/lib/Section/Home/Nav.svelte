@@ -1,11 +1,7 @@
 <script lang="ts">
   import logo from "../../../assets/logo.png";
-
-  const links = {
-    download: "Download",
-    changelog: "Changelog",
-    contact: "Contact",
-  };
+  import { links } from "../../../ts/page";
+  import Burger from "./Nav/Burger.svelte";
 </script>
 
 <div class="nav">
@@ -19,6 +15,7 @@
       <a href="#{link[0]}">{link[1]}</a>
     {/each}
   </div>
+  <Burger />
 </div>
 
 <style scoped>
@@ -68,25 +65,16 @@
     text-decoration: underline;
   }
 
-  @media screen and (max-width: 600px) {
-    div.nav {
-      justify-content: center;
-    }
-    div.nav div.logo p {
+  @media screen and (max-width: 700px) {
+    div.nav div.pages {
       display: none;
-    }
-  }
-
-  @media screen and (max-width: 390px) {
-    div.nav div.logo {
-      margin-right: 15px;
     }
     div.nav div.sep {
       display: none;
     }
 
-    div.nav div.pages a + a {
-      margin-left: 15px;
+    div.nav {
+      padding: 20px 30px;
     }
   }
 </style>

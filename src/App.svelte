@@ -7,11 +7,13 @@
   import Contact from "./lib/Section/Contact.svelte";
   import Footer from "./lib/Section/Footer.svelte";
   import About from "./lib/Section/About.svelte";
+  import Features from "./lib/Section/Features.svelte";
 </script>
 
 <Home />
 <Screenshot />
 <About />
+<Features />
 <DownloadSection />
 <Changelog />
 <Contact />
