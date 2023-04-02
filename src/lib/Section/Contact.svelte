@@ -95,4 +95,24 @@
   div.places a:active {
     opacity: 0.4;
   }
+
+  @media screen and (max-width: 800px) {
+    h1.header {
+      font-size: 28px;
+    }
+
+    h3.subheader {
+      font-size: 16px;
+      margin: 0px 15px;
+      margin-bottom: 0;
+    }
+
+    div.places {
+      margin-top: 30px;
+    }
+
+    div.center {
+      margin: 0;
+    }
+  }
 </style>

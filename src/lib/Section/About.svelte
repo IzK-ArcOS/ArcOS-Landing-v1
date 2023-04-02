@@ -1,14 +1,19 @@
 <script>
   import Section from "../Section.svelte";
-  import List from "./Changelog/List.svelte";
 </script>
 
-<Section height={480} id="changelog">
+<Section id="about">
   <div class="center">
     <div>
-      <h1 class="header">Changelog</h1>
-      <h3 class="subheader">What's happening?</h3>
-      <List />
+      <h1 class="header">About ArcOS</h1>
+      <h3 class="subheader">What even is it?</h3>
+      <p class="context">
+        ArcOS is an Operating System Environment built using web technologies.
+        With ArcOS we aim to create the best OS experience you can get using web
+        development. With over 10 repositories and more lines of code than I can
+        count, ArcOS is the biggest project I have ever taken on, and there are
+        few things quite like it.
+      </p>
     </div>
   </div>
 </Section>
@@ -34,7 +39,11 @@
     text-align: center;
   }
   div.center {
-    margin-top: 80px;
+    margin-top: 0px;
+  }
+
+  p.context {
+    max-width: 700px;
   }
 
   @media screen and (max-width: 800px) {
@@ -48,8 +57,9 @@
       margin-bottom: 0;
     }
 
-    div.center {
-      margin-top: 40px;
+    p.context {
+      max-width: unset;
+      padding: 20px;
     }
   }
 </style>

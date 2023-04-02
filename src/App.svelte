@@ -6,10 +6,12 @@
   import Changelog from "./lib/Section/Changelog.svelte";
   import Contact from "./lib/Section/Contact.svelte";
   import Footer from "./lib/Section/Footer.svelte";
+  import About from "./lib/Section/About.svelte";
 </script>
 
 <Home />
 <Screenshot />
+<About />
 <DownloadSection />
 <Changelog />
 <Contact />
