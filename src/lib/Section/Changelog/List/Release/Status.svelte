@@ -14,6 +14,10 @@
     background-color: #283e28;
     border-radius: 5px;
     color: #abffa6;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 93px;
   }
 
   div.release-status.pre {

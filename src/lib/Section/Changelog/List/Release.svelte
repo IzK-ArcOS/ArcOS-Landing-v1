@@ -49,10 +49,10 @@
     bottom: 0px;
     left: 0px;
     width: 100%;
-    height: 80px;
+    height: 90px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    background: linear-gradient(to bottom, transparent 40%, #151515 95%);
+    background: linear-gradient(to bottom, transparent 40%, #151515 90%);
     pointer-events: none;
   }
   div.release h1 {
@@ -67,12 +67,19 @@
     white-space: nowrap;
   }
 
-  div.release div.items {
+  div.release h1 div.items {
     margin-left: auto;
     display: flex;
     gap: 5px;
     font-style: normal;
     font-size: 14px;
     font-weight: normal;
+    padding-left: 10px;
+  }
+
+  @media screen and (max-width: 800px) {
+    div.release {
+      margin-bottom: 10px;
+    }
   }
 </style>
