@@ -9,11 +9,28 @@
       body {
         background-color: #111;
         margin: 0;
+        color: #ccc;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        height: 100%;
+      }
+      h1 {
+        margin: 0;
+      }
+      div.load-fail {
+        padding: 30px;
       }
     </style>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <div class="load-fail">
+        <h1>Hello there!</h1>
+        <p>
+          The ArcOS website failed to load... This usually happens because of an
+          outdated browser, please update your browser and then try again.
+        </p>
+      </div>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
