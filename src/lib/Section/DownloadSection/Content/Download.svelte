@@ -100,6 +100,13 @@
 
   div.download div.info p {
     margin: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  div.download div.info a {
+    white-space: nowrap;
   }
 
   div.download div.info div.dot {

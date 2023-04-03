@@ -22,7 +22,9 @@
         Couldn't get the releases! You may be rate limited by GitHub. To see the
         logs, please visit the releases page.
       </p>
-      <button>Go to releases</button>
+      <a href="https://github.com/IzK-ArcOS/ArcOS-Frontend/releases">
+        Go to releases
+      </a>
     </div>
   {/if}
 </div>
@@ -63,24 +65,26 @@
     margin: 15px auto;
   }
 
-  div.fail button {
+  div.fail a {
     padding: 5px 15px;
     border: none;
     border-radius: 5px;
     background-color: #222;
     color: var(--fg);
+    font-size: 14px;
+    text-decoration: none;
   }
 
-  div.fail button:hover {
+  div.fail a:hover {
     opacity: 0.7;
   }
 
-  div.fail button:active {
+  div.fail a:active {
     opacity: 0.4;
   }
 
   div.fail p {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   @media screen and (max-width: 600px) {
