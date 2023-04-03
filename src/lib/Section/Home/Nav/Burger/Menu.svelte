@@ -27,6 +27,7 @@
     padding: 20px 25px;
     box-sizing: border-box;
     border: #333 1px solid;
+    z-index: 10;
   }
 
   div.menu * {

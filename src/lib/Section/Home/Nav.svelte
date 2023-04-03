@@ -21,12 +21,16 @@
 <style scoped>
   div.nav {
     width: 100%;
-    height: 70px;
     padding: 20px 60px;
     box-sizing: border-box;
     display: flex;
     line-height: 30px;
     overflow: hidden;
+    opacity: 0;
+    animation: fadein 1s forwards;
+    animation-delay: 0.5s;
+    position: relative;
+    z-index: 10;
   }
 
   div.nav div.logo {
@@ -75,6 +79,16 @@
 
     div.nav {
       padding: 20px 30px;
+    }
+  }
+
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
     }
   }
 </style>

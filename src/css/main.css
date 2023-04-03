@@ -13,6 +13,7 @@ body {
 }
 
 html {
+  background-color: black;
   margin: 0;
   overflow-x: hidden;
 }
@@ -22,7 +23,7 @@ html {
 }
 
 * {
-  transition: all 0.15s;
+  transition: all 0.15s, color 0.05s;
   outline: none !important;
 }
 
@@ -41,5 +42,15 @@ html {
 
   section#download {
     height: 320px !important;
+  }
+
+  section#changelog {
+    height: 420px !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  section#changelog {
+    height: 460px !important;
   }
 }

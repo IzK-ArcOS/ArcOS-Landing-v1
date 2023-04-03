@@ -18,6 +18,11 @@
   div.center div {
     text-align: center;
     margin-top: 50px;
+    z-index: 0;
+  }
+
+  div.center div * {
+    z-index: 0;
   }
 
   div.center h1 {
@@ -36,6 +41,66 @@
     font-size: 24px;
     line-height: 29px;
     opacity: 0.5;
+  }
+
+  div.center div h1 {
+    opacity: 0;
+  }
+
+  div.center div h3 {
+    opacity: 0;
+  }
+
+  div.center div {
+    animation: slide 1s forwards;
+    animation-delay: 0.5s;
+    padding-top: 80px;
+  }
+
+  div.center div h1 {
+    animation: fadein 1s forwards;
+    animation-delay: 0.9s;
+  }
+
+  div.center div img {
+    animation: fadein 1s forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+  }
+
+  div.center div h3 {
+    animation: fadein-half 1s forwards;
+    animation-delay: 1.4s;
+  }
+
+  @keyframes fadein-half {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 0.5;
+    }
+  }
+
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide {
+    0% {
+      padding-top: 80px;
+    }
+
+    100% {
+      padding-top: 0;
+    }
   }
 
   @media screen and (max-width: 500px) {

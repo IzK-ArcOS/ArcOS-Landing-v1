@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { onMount } from "svelte";
   import Menu from "./Burger/Menu.svelte";
 
   let opened = false;
@@ -6,6 +7,12 @@
   function toggle() {
     opened = !opened;
   }
+
+  onMount(() => {
+    document.addEventListener("scroll", () => {
+      opened = false;
+    });
+  });
 </script>
 
 <button class="burger material-icons-round" on:click={toggle}>menu</button>
