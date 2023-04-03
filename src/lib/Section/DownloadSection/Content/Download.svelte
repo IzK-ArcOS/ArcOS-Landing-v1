@@ -10,7 +10,7 @@
   onMount(async () => {
     releases = await getReleases();
 
-    if (!releases.length) return;
+    if (!releases.length) return (loaded = false);
 
     version = releases[0].tag_name;
     prerelease = releases[0].prerelease;
@@ -18,7 +18,11 @@
   });
 
   function download() {
-    window.open(releases[0].assets[0].browser_download_url);
+    window.open(
+      loaded
+        ? releases[0].assets[0].browser_download_url
+        : "https://github.com/IzK-ArcOS/ArcOS-Frontend/releases"
+    );
   }
 </script>
 
@@ -26,9 +30,9 @@
   <button
     class="download"
     on:click={download}
-    disabled={!loaded || !navigator.userAgent.toLowerCase().includes("windows")}
+    disabled={!navigator.userAgent.toLowerCase().includes("windows") && loaded}
   >
-    <p>Download Latest</p>
+    <p>{loaded ? "Download Latest" : "Go to GitHub"}</p>
   </button>
   <div class="info">
     {#if loaded}

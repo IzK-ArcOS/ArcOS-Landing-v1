@@ -5,7 +5,7 @@
   import Messaging from "./Features/Messaging.svelte";
 </script>
 
-<Section height={900} id="features">
+<Section height={800} id="features">
   <div class="center">
     <div>
       <Customization />
