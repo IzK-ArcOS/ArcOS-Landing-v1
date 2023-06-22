@@ -13,6 +13,10 @@
         development. With over 10 repositories and more lines of code than I can
         count, ArcOS is the biggest project I have ever taken on, and there are
         few things quite like it.
+        <br />
+        <br />
+        I often tell people; "Just like Windows used to run on top of MS-DOS, ArcOS
+        runs on top of Windows"
       </p>
       <a href="https://github.com/IzK-ArcOS" class="github">Visit our GitHub</a>
     </div>
