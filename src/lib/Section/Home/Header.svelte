@@ -6,7 +6,10 @@
   <div>
     <img src={logo} alt="" />
     <h1 class="header">An OS... In Svelte?</h1>
-    <h3 class="subheader">Welcome to ArcOS.</h3>
+    <h3 class="subheader">
+      <span>Welcome to ArcOS.</span>
+      <a href="#download">Download</a>
+    </h3>
   </div>
 </div>
 
@@ -40,7 +43,37 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
-    opacity: 0.5;
+    opacity: 1;
+    color: #586e86;
+    text-align: center;
+  }
+
+  div.center h3 > * {
+    display: block;
+    margin: 0 auto;
+  }
+
+  a {
+    display: block;
+    margin: 0 auto;
+    color: var(--fg);
+    background-color: var(--gradient-end);
+    width: fit-content;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 18px;
+    align-items: center;
+    display: flex !important;
+    margin-top: 30px !important;
+  }
+
+  a::after {
+    content: "download";
+    font-family: "Material Icons Round";
+    font-size: 20px;
+    margin-left: 10px;
   }
 
   div.center div h1 {
@@ -69,18 +102,8 @@
   }
 
   div.center div h3 {
-    animation: fadein-half 1s forwards;
+    animation: fadein 1s forwards;
     animation-delay: 1.4s;
-  }
-
-  @keyframes fadein-half {
-    0% {
-      opacity: 0;
-    }
-
-    100% {
-      opacity: 0.5;
-    }
   }
 
   @keyframes fadein {

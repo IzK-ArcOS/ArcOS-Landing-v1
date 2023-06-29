@@ -7,7 +7,7 @@
 
   <p class="disclaimer">
     <b>Disclaimer:</b> currently only available for Windows.<br />
-    To compile for your OS, <del>click here</del>.
+    Other operating systems will be supported in the future.
   </p>
 </div>
 

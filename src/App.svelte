@@ -8,6 +8,7 @@
   import Footer from "./lib/Section/Footer.svelte";
   import About from "./lib/Section/About.svelte";
   import Features from "./lib/Section/Features.svelte";
+  import Disclaimers from "./lib/Section/Disclaimers.svelte";
 </script>
 
 <Home />
@@ -17,4 +18,5 @@
 <DownloadSection />
 <Changelog />
 <Contact />
+<Disclaimers />
 <Footer />

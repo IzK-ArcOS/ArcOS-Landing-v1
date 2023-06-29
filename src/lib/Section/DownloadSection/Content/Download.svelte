@@ -32,7 +32,13 @@
     on:click={download}
     disabled={!navigator.userAgent.toLowerCase().includes("windows") && loaded}
   >
-    <p>{loaded ? "Download Latest" : "Go to GitHub"}</p>
+    <p>
+      {loaded
+        ? navigator.userAgent.toLowerCase().includes("windows")
+          ? "Download Latest"
+          : "Windows Only"
+        : "Go to GitHub"}
+    </p>
   </button>
   <div class="info">
     {#if loaded}
