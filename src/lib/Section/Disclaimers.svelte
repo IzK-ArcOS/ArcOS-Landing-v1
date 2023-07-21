@@ -2,7 +2,7 @@
   import Section from "../Section.svelte";
 </script>
 
-<Section id="disclaimers" height={100}>
+<Section id="disclaimers">
   <div>
     <ul>
       <li>
@@ -29,9 +29,9 @@
 </Section>
 
 <style scoped>
+
   ul {
     max-width: 700px;
-    margin-bottom: 50px;
     opacity: 0.5;
     font-size: 11px;
     padding-left: 20px;
@@ -44,7 +44,6 @@
   @media screen and (max-width: 800px) {
     ul {
       max-width: unset;
-      padding: 20px;
       margin-bottom: 10px;
     }
   }
