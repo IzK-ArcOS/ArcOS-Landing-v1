@@ -16,7 +16,7 @@
         <br />
         <br />
         I often tell people; "Just like Windows used to run on top of MS-DOS, ArcOS
-        runs on top of Windows"
+        runs on top of your operating system"
       </p>
       <a href="https://github.com/IzK-ArcOS" class="github">Visit our GitHub</a>
     </div>

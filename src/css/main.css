@@ -39,7 +39,7 @@ html {
 
 @media screen and (max-width: 800px) {
   section#home {
-    height: 460px !important;
+    height: 480px !important;
   }
 
   section#download {
