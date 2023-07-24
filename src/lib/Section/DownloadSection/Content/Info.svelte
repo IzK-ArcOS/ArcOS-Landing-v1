@@ -6,8 +6,8 @@
   </p>
 
   <p class="disclaimer">
-    <b>Disclaimer:</b> currently only available for Windows.<br />
-    Other operating systems will be supported in the future.
+    <b>Note:</b> Starting with 5.0.8, we've migrated to Electron. This allows us
+    to support more operating systems, but there may be bugs we didn't detect yet.
   </p>
 </div>
 

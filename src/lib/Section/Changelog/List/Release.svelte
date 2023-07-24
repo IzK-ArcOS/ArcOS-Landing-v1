@@ -18,10 +18,10 @@
         {release.tag_name}
       </span>
       <div class="items">
-        <Open {release} />
-        <Download {release} />
-        <!-- 
-        <Tag {release} /> -->
+        <Open {release} /><!-- 
+        <Download {release} /> -->
+
+        <Tag {release} />
         <Status {release} />
       </div>
     </h1>
