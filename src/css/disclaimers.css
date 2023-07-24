@@ -1,5 +1,12 @@
 section#disclaimers {
+  height: 100% !important;
   padding-top: 30px;
   background-color: #00488c33;
-  padding: 40px 100px;
+  padding: 8px 100px;
+}
+
+@media screen and (max-width: 600px) {
+  section#disclaimers {
+    padding: 8px 10px;
+  }
 }
