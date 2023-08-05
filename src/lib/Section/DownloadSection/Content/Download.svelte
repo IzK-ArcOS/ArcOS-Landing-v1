@@ -103,20 +103,12 @@
     white-space: nowrap;
   }
 
-  div.download div.info a {
-    white-space: nowrap;
-  }
-
   div.download div.info div.dot {
     width: 2px;
     height: 2px;
     margin: 6px 5px;
     background-color: var(--fg);
     border-radius: 50%;
-  }
-
-  div.download div.info a {
-    color: var(--fg);
   }
 
   @media screen and (max-width: 800px) {
