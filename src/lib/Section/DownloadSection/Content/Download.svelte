@@ -27,28 +27,14 @@
 </script>
 
 <div class="download">
-  <button
-    class="download"
-    on:click={download}
-    disabled={!navigator.userAgent.toLowerCase().includes("windows") && loaded}
-  >
-    <p>
-      <!-- {loaded
-        ? navigator.userAgent.toLowerCase().includes("windows")
-          ? "Download Latest"
-          : "Windows Only"
-        : "Go to GitHub"} -->
-      Go to GitHub
-    </p>
+  <button class="download" on:click={download}>
+    <p>Go to GitHub</p>
   </button>
   <div class="info">
     {#if loaded}
       <p class="version">{version} - {prerelease ? "Uns" : "S"}table</p>
       <div class="dot" />
       <p class="version">Electron</p>
-      <!--<a href="https://github.com/IzK-ArcOS/ArcOS-Frontend/releases"
-        >Other versions</a
-      > -->
     {:else}
       Unable to get releases.
     {/if}
