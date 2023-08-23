@@ -8,8 +8,11 @@
     <h1 class="header">An OS... In Svelte?</h1>
     <h3 class="subheader">
       <span>Welcome to ArcOS.</span>
-      <a href="#download">Download</a>
     </h3>
+    <div class="container">
+      <a href="#download" class="download">Download</a>
+      <a href="https://web.izk-arcos.nl" class="try">Try in your browser</a>
+    </div>
   </div>
 </div>
 
@@ -53,24 +56,45 @@
     margin: 0 auto;
   }
 
+  div.center div.container {
+    display: flex;
+  }
+
   a {
-    display: block;
     margin: 0 auto;
     color: var(--fg);
-    background-color: var(--gradient-end);
     width: fit-content;
     padding: 10px 15px;
-    border-radius: 5px;
     text-decoration: none;
     font-size: 14px;
     line-height: 18px;
     align-items: center;
-    display: flex !important;
-    margin-top: 30px !important;
+    display: flex;
+    margin-top: 0px;
+    border-radius: 5px;
+  }
+  
+  .download {
+    justify-content: center;
+    background-color: var(--gradient-end);
+    flex: 1;
+    margin-right: 20px;
   }
 
-  a::after {
+  .try {
+    border: 2px solid var(--gradient-end);
+  }
+
+
+  .download::after {
     content: "download";
+    font-family: "Material Icons Round";
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  .try::after {
+    content: "launch";
     font-family: "Material Icons Round";
     font-size: 20px;
     margin-left: 10px;
@@ -84,11 +108,20 @@
     opacity: 0;
   }
 
+  div.center div div.container {
+    opacity: 0;
+  }
+
   div.center div {
     animation: slide 1s forwards;
     animation-delay: 0.5s;
     padding-top: 80px;
   }
+  
+  div.center div div.container {
+    padding-top: 0px;
+  }
+
 
   div.center div h1 {
     animation: fadein 1s forwards;
@@ -102,6 +135,11 @@
   }
 
   div.center div h3 {
+    animation: fadein 1s forwards;
+    animation-delay: 1.4s;
+  }
+
+  div.center div div.container {
     animation: fadein 1s forwards;
     animation-delay: 1.4s;
   }
