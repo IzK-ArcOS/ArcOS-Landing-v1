@@ -13,7 +13,7 @@
         <a
           class="place discord"
           title="Join our Discord server"
-          href="https://discord.gg/ARjRM6uNqf"
+          href="https://discord.gg/S3fTadu88C"
         >
           <img src={discord} alt="" />
         </a>
