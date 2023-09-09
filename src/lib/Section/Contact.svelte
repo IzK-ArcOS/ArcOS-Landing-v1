@@ -27,7 +27,7 @@
         <a
           class="place"
           title="Send us an E-mail"
-          href="mailto:izaak.kuipers@gmail.com"
+          href="mailto:izaak@arcapi.nl"
         >
           <span class="material-icons-round">email</span>
         </a>
