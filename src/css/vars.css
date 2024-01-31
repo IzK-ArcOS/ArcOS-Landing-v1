@@ -2,13 +2,14 @@
   --bg: #111;
   --gradient-start: #008dff;
   --gradient-end: #00488c;
-  --gradient: linear-gradient(#000000cc, #000000cc),
-    linear-gradient(
-      -65deg,
-      var(--gradient-end) 0%,
-      var(--gradient-start) 50%,
-      var(--gradient-end) 100%
-    );
+  --gradient-dark-start: #002341;
+  --gradient-dark-end: #001222;
+  --gradient: linear-gradient(
+    -65deg,
+    var(--gradient-dark-end) 0%,
+    var(--gradient-dark-start) 50%,
+    var(--gradient-dark-end) 100%
+  );
 
   --fg: #ccc;
 }

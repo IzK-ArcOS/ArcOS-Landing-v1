@@ -25,6 +25,7 @@
     text-align: center;
     margin-top: 50px;
     z-index: 0;
+    margin-bottom: 50px;
   }
 
   div.center div * {
@@ -73,7 +74,7 @@
     margin-top: 0px;
     border-radius: 5px;
   }
-  
+
   .download {
     justify-content: center;
     background-color: var(--gradient-end);
@@ -84,7 +85,6 @@
   .try {
     border: 2px solid var(--gradient-end);
   }
-
 
   .download::after {
     content: "download";
@@ -98,70 +98,6 @@
     font-family: "Material Icons Round";
     font-size: 20px;
     margin-left: 10px;
-  }
-
-  div.center div h1 {
-    opacity: 0;
-  }
-
-  div.center div h3 {
-    opacity: 0;
-  }
-
-  div.center div div.container {
-    opacity: 0;
-  }
-
-  div.center div {
-    animation: slide 1s forwards;
-    animation-delay: 0.5s;
-    padding-top: 80px;
-  }
-  
-  div.center div div.container {
-    padding-top: 0px;
-  }
-
-
-  div.center div h1 {
-    animation: fadein 1s forwards;
-    animation-delay: 0.9s;
-  }
-
-  div.center div img {
-    animation: fadein 1s forwards;
-    animation-delay: 0.5s;
-    opacity: 0;
-  }
-
-  div.center div h3 {
-    animation: fadein 1s forwards;
-    animation-delay: 1.4s;
-  }
-
-  div.center div div.container {
-    animation: fadein 1s forwards;
-    animation-delay: 1.4s;
-  }
-
-  @keyframes fadein {
-    0% {
-      opacity: 0;
-    }
-
-    100% {
-      opacity: 1;
-    }
-  }
-
-  @keyframes slide {
-    0% {
-      padding-top: 80px;
-    }
-
-    100% {
-      padding-top: 0;
-    }
   }
 
   @media screen and (max-width: 500px) {

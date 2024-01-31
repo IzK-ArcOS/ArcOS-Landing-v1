@@ -4,7 +4,7 @@
   import Nav from "./Home/Nav.svelte";
 </script>
 
-<Section gradient height={800} id="home">
+<Section gradient id="home">
   <Nav />
   <Header />
 </Section>

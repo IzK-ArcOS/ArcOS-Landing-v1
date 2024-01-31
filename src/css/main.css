@@ -33,26 +33,7 @@ div.center {
   display: flex;
   justify-content: center;
 }
+
 html {
   scroll-behavior: smooth;
-}
-
-@media screen and (max-width: 800px) {
-  section#home {
-    height: 480px !important;
-  }
-
-  section#download {
-    height: 320px !important;
-  }
-
-  section#changelog {
-    height: 420px !important;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  section#changelog {
-    height: 460px !important;
-  }
 }

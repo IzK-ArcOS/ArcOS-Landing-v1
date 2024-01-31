@@ -4,7 +4,7 @@
   import Icon from "./DownloadSection/Icon.svelte";
 </script>
 
-<Section height={390} gradient className="download-section" id="download">
+<Section gradient className="download-section" id="download">
   <div class="wrapper">
     <Icon />
     <Content />

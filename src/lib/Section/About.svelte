@@ -63,6 +63,7 @@
     font-size: 14px;
     line-height: 18px;
     display: flex;
+    margin-bottom: 80px;
   }
 
   a.github::after {

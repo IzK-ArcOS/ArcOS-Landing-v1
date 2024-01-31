@@ -3,7 +3,7 @@
   import List from "./Changelog/List.svelte";
 </script>
 
-<Section height={480} id="changelog">
+<Section id="changelog">
   <div class="center">
     <div>
       <h1 class="header">Changelog</h1>

@@ -4,7 +4,7 @@
   import Section from "../Section.svelte";
 </script>
 
-<Section height={230} id="contact">
+<Section id="contact">
   <div class="center">
     <div>
       <h1 class="header">Contact</h1>
@@ -43,6 +43,7 @@
     font-size: 36px;
     line-height: 44px;
     margin: 0;
+    margin-top: 50px;
     text-align: center;
   }
 
@@ -64,7 +65,7 @@
     display: flex;
     justify-content: center;
     gap: 30px;
-    margin-top: 50px;
+    margin: 60px 0;
   }
 
   div.places a {
