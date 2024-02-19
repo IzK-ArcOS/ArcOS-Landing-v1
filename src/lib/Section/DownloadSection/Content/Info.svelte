@@ -6,8 +6,8 @@
   </p>
 
   <p class="disclaimer">
-    <b>Note:</b> Starting with 5.0.8, we've migrated to Electron. This allows us
-    to support more operating systems, but there may be bugs we didn't detect yet.
+    <b>Note:</b> With the upcoming release of ArcOS v6, v5 development has stopped
+    entirely. The last version is 5.0.12.
   </p>
 </div>
 
