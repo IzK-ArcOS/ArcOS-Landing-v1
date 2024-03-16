@@ -43,8 +43,8 @@
 
   @media screen and (max-width: 800px) {
     div.list {
-      width: calc(100% - 40px);
-      margin: 50px 20px;
+      width: calc(100% - 80px);
+      margin: 50px auto;
       box-sizing: border-box;
     }
   }
@@ -71,7 +71,7 @@
     border-radius: 5px;
     background-color: #222;
     color: var(--fg);
-    font-size: 14px;
+    font-size: 16px;
     text-decoration: none;
   }
 
@@ -89,13 +89,13 @@
 
   @media screen and (max-width: 600px) {
     div.list {
-      width: calc(100% - 10px);
-      margin: 50px 5px;
+      width: calc(100% - 70px);
       box-sizing: border-box;
       padding: 10px;
       border: none;
       margin-top: 30px;
       margin-bottom: 0;
+      margin: 30px auto;
     }
 
     div.list div.fail p {

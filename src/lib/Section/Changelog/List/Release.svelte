@@ -72,7 +72,7 @@
     display: flex;
     gap: 5px;
     font-style: normal;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: normal;
     padding-left: 10px;
   }

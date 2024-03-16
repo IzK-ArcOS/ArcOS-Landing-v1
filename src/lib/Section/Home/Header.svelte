@@ -67,7 +67,7 @@
     width: fit-content;
     padding: 10px 15px;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 18px;
     align-items: center;
     display: flex;
@@ -115,6 +115,23 @@
 
     div.center h3 {
       font-size: 22px;
+    }
+
+    div.container {
+      flex-direction: column;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    div.container a {
+      margin: 0;
+      width: 100%;
+      justify-content: center;
+      height: 50px !important;
+      display: flex;
+      max-height: unset;
+      min-height: 50px;
+      box-sizing: border-box;
     }
   }
 </style>

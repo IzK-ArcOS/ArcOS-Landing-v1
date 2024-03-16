@@ -76,7 +76,7 @@
 
   div.download button p {
     margin: 0;
-    font-size: 13px;
+    font-size: 16px;
   }
 
   div.download button:hover {
@@ -90,7 +90,7 @@
   div.download div.info {
     display: flex;
     font-size: 11px;
-    height: 14px;
+    height: 16px;
     opacity: 0.3;
     justify-content: center;
     margin-top: 5px;

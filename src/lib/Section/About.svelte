@@ -60,7 +60,7 @@
     padding: 10px 15px;
     border-radius: 5px;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 18px;
     display: flex;
     margin-bottom: 80px;
